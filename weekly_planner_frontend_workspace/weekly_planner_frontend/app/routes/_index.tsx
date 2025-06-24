@@ -290,33 +290,28 @@ export default function Index() {
     Object.fromEntries(DAYS.map((d) => [d, []])),
   );
 
-  // Modal: which day is open (if any)
-  const [modalOpen, setModalOpen] = useState(false);
+  // Modal: state to track which day is open, null/empty if closed
   const [modalDay, setModalDay] = useState<string | null>(null);
 
-  // Open modal to add task for a specific day (fix: handle from '+' button)
+  // Open modal to add task for a specific day
   function openAddModal(day: string) {
     setModalDay(day);
-    setModalOpen(true);
   }
 
-  // Save a new task to given day (fix: reset modal state AFTER tasks update)
+  // Save a new task to given day
   function handleSaveTask(task: Omit<Task, "id">) {
     if (!modalDay) return;
     setTasksByDay((prev) => {
       const id = `${Date.now()}-${Math.random().toString(36).slice(2)}`;
-      // Defensive: fallback to Monday if modalDay ever null (shouldn't happen)
-      const useDay = modalDay || "Monday";
       return {
         ...prev,
-        [useDay]: [
-          ...prev[useDay],
+        [modalDay]: [
+          ...prev[modalDay],
           { ...task, id },
         ],
       };
     });
     setModalDay(null);
-    setModalOpen(false);
   }
 
   // Delete a task from given day
@@ -366,11 +361,8 @@ export default function Index() {
         </div>
       </section>
       <AddTaskModal
-        open={modalOpen && !!modalDay}
-        onClose={() => {
-          setModalOpen(false);
-          setModalDay(null);
-        }}
+        open={!!modalDay}
+        onClose={() => setModalDay(null)}
         onSave={handleSaveTask}
         forDay={modalDay ?? ""}
       />
