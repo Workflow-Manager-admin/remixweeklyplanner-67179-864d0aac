@@ -5,3 +5,26 @@
 [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
+Error: No route matches URL "/preview.html"
+    at getInternalRouterError (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/router/router.ts:5550:5)
+    at Object.query (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/router/router.ts:3562:19)
+    at handleDocumentRequest (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/server-runtime/dist/server.js:313:35)
+    at requestHandler (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/server-runtime/dist/server.js:170:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at nodeHandler (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/dev/dist/vite/plugin.js:859:27)
+    at /home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/dev/dist/vite/plugin.js:862:15
+No routes matched location "/preview.html" 
+ErrorResponseImpl {
+  status: 404,
+  statusText: 'Not Found',
+  internal: true,
+  data: 'Error: No route matches URL "/preview.html"',
+  error: Error: No route matches URL "/preview.html"
+      at getInternalRouterError (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/router/router.ts:5550:5)
+      at Object.query (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/router/router.ts:3562:19)
+      at handleDocumentRequest (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/server-runtime/dist/server.js:313:35)
+      at requestHandler (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/server-runtime/dist/server.js:170:24)
+      at processTicksAndRejections (node:internal/process/task_queues:95:5)
+      at nodeHandler (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/dev/dist/vite/plugin.js:859:27)
+      at /home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/@remix-run/dev/dist/vite/plugin.js:862:15
+}
