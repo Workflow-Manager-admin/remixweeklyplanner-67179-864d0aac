@@ -207,8 +207,10 @@ function TaskCard({
   );
 }
 
+
 /** PUBLIC_INTERFACE
  * Card component for each day that shows the day's name, tasks, and an add button.
+ * '+' button now triggers with the specific day passed up.
  */
 function DayCard({
   day,
@@ -218,7 +220,7 @@ function DayCard({
 }: {
   day: string;
   tasks: Task[];
-  onAddTask: () => void;
+  onAddTask: (day: string) => void;
   onDeleteTask: (taskId: string) => void;
 }) {
   return (
@@ -236,7 +238,7 @@ function DayCard({
             background: ACCENT,
             boxShadow: "0 2px 8px #10b98115",
           }}
-          onClick={onAddTask}
+          onClick={() => onAddTask(day)}
         >
           <svg
             width={18}
@@ -278,6 +280,7 @@ function DayCard({
   );
 }
 
+
 /** PUBLIC_INTERFACE
  * Top-level Weekly Planner page, uses in-memory state for all week tasks.
  */
@@ -291,11 +294,12 @@ export default function Index() {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalDay, setModalDay] = useState<string | null>(null);
 
-  // Open modal to add task
+  // Open modal to add task for a specific day
   function openAddModal(day: string) {
     setModalDay(day);
     setModalOpen(true);
   }
+
   // Save a new task to given day
   function handleSaveTask(task: Omit<Task, "id">) {
     if (!modalDay) return;
@@ -312,6 +316,7 @@ export default function Index() {
     setModalOpen(false);
     setModalDay(null);
   }
+
   // Delete a task from given day
   function handleDeleteTask(day: string, id: string) {
     setTasksByDay((prev) => ({
@@ -350,7 +355,7 @@ export default function Index() {
                 key={day}
                 day={day}
                 tasks={tasksByDay[day]}
-                onAddTask={() => openAddModal(day)}
+                onAddTask={openAddModal}
                 onDeleteTask={(taskId) => handleDeleteTask(day, taskId)}
               />
             ))}

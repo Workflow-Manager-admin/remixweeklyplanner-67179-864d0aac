@@ -5,25 +5,3 @@
 [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
-ReferenceError: React is not defined
-    at AddTaskModal (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/app/routes/_index.tsx:88:25)
-    at renderWithHooks (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:5724:16)
-    at renderIndeterminateComponent (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:5798:15)
-    at renderElement (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6023:7)
-    at renderNodeDestructiveImpl (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6181:11)
-    at renderNodeDestructive (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6153:14)
-    at renderNode (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6336:12)
-    at renderChildrenArray (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6288:7)
-    at renderNodeDestructiveImpl (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6218:7)
-    at renderNodeDestructive (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6153:14)
-ReferenceError: React is not defined
-    at AddTaskModal (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/app/routes/_index.tsx:88:25)
-    at renderWithHooks (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:5724:16)
-    at renderIndeterminateComponent (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:5798:15)
-    at renderElement (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6023:7)
-    at renderNodeDestructiveImpl (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6181:11)
-    at renderNodeDestructive (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6153:14)
-    at renderNode (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6336:12)
-    at renderChildrenArray (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6288:7)
-    at renderNodeDestructiveImpl (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6218:7)
-    at renderNodeDestructive (/home/kavia/workspace/code-generation/remixweeklyplanner-67179-864d0aac/weekly_planner_frontend_workspace/weekly_planner_frontend/node_modules/react-dom/cjs/react-dom-server.node.development.js:6153:14)
